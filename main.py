@@ -1,15 +1,18 @@
 s = input()
-a, b, c, d = 0, 0, 0, 0
+a = 0
+b = 0
+c = 0
+d = 0
 
 for i in s:
-    if i.isalpha():
-        a += 1
-    elif i.isdigit():
-        b += 1
+    if i >= 'a' and i <= 'z' or i >= 'A' and i <= 'Z':
+        a = a + 1
+    elif i >= '0' and i <= '9':
+        b = b + 1
     elif i == ' ':
-        c += 1
+        c = c + 1
     else:
-        d += 1
+        d = d + 1
 
 print("英文字符:", a)
 print("数字:", b)
