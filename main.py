@@ -1,20 +1,21 @@
-s = input()
-a = 0
-b = 0
-c = 0
-d = 0
+text = input()
 
-for char in s:
+letters = 0
+digits = 0
+spaces = 0
+others = 0
+
+for char in text:
     if char.isalpha():
-        a += 1
+        letters += 1
     elif char.isdigit():
-        b += 1
+        digits += 1
     elif char.isspace():
-        c += 1
+        spaces += 1
     else:
-        d += 1
+        others += 1
 
-print("英文字符:", a)
-print("数字:", b)
-print("空格:", c)
-print("其他字符:", d)
+print("英文字符:", letters)
+print("数字:", digits)
+print("空格:", spaces)
+print("其他字符:", others)
