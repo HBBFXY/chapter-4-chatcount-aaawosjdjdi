@@ -5,12 +5,12 @@ digits = 0
 spaces = 0
 others = 0
 
-for char in text:
-    if char.isalpha():
+for i in text:
+    if ('a' <= i <= 'z') or ('A' <= i <= 'Z'):
         letters += 1
-    elif char.isdigit():
+    elif '0' <= i <= '9':
         digits += 1
-    elif char.isspace():
+    elif i == ' ':
         spaces += 1
     else:
         others += 1
