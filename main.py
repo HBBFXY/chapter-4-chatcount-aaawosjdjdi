@@ -15,7 +15,7 @@ for i in text:
     else:
         others += 1
 
-print("英文字符:", letters)
-print("数字:", digits)
-print("空格:", spaces)
-print("其他字符:", others)
+print("letters:", letters)
+print("digits:", digits)
+print("spaces:", spaces)
+print("others:", others)
