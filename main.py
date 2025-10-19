@@ -5,17 +5,17 @@ digits = 0
 spaces = 0
 others = 0
 
-for i in text:
-    if ('a' <= i <= 'z') or ('A' <= i <= 'Z'):
+for char in text:
+    if char.isalpha():
         letters += 1
-    elif '0' <= i <= '9':
+    elif char.isdigit():
         digits += 1
-    elif i == ' ':
+    elif char.isspace():
         spaces += 1
     else:
         others += 1
 
-print("letters:", letters)
-print("digits:", digits)
-print("spaces:", spaces)
-print("others:", others)
+print("英文字符:", letters)
+print("数字:", digits)
+print("空格:", spaces)
+print("其他字符:", others)
